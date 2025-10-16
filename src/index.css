@@ -1,7 +1,27 @@
-.app{
-    display: flex;
-}
+
 .content-wrapper{
+      min-height: 100vh;
     display: flex;
     flex-direction: row;
+
+}
+.list-wrapper{
+    display:flex;
+    flex-direction:column;
+    width:99%;
+    
+}
+.list-item {
+    margin-top:100px;
+    margin-left:00px;
+    margin-right:50px;
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 20px; 
+
+    
+}
+html, body {
+  margin: 0;
+  padding: 0;
 }

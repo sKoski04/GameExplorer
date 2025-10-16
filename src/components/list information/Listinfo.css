@@ -1,0 +1,26 @@
+.text-row{
+    display:flex;
+    flex-direction:row;
+   
+    padding:0;
+   margin-left:100px;
+
+    
+}
+.button-wrapper{
+    display:flex;
+    flex:2;
+    justify-content:flex-end;
+    align-items:flex-end;
+    margin-bottom:5px;
+}
+.see-all-button{
+    border:none;
+    height:20px;
+   background:none;
+   color:#8c9ea1;
+   font-size:15px;
+}
+h1{
+    color:#8c9ea1;
+}
