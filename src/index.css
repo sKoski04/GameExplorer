@@ -1,0 +1,7 @@
+.app{
+    display: flex;
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,42 @@
+.search-container{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+
+.search-icon{
+    flex:2;
+    height: 30px;
+    width: auto;
+    margin-top:10px;
+   
+}
+.input-field{
+    display: flex;
+    
+  border: none;
+  border-radius: 10px;
+    background-color: rgb(61, 61, 61);
+width: 500px;
+    
+}
+.input-field::placeholder {
+  color: #a39869af;          
+  opacity: 1;         
+}
+.profile-icon{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    width: auto;
+   
+}
+.search-elements{
+    flex:2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}

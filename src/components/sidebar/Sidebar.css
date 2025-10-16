@@ -1,0 +1,21 @@
+.navbar-list{
+   
+    list-style-type: none;
+    padding: 0;
+}
+.navbar-icon{
+    width: 50px;
+    height: auto;
+ margin-top:100px ;
+    border-radius: 10px;
+    
+   
+
+}
+.navbar-icon:hover{
+    transform:scale(1.25);
+    background-color:rgb(197, 197, 197);
+    
+    
+    
+}
