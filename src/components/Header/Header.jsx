@@ -1,5 +1,5 @@
 import searchImage from './assets/search.png'
-import profileImage from './assets/account.png'
+import profileImage from './assets/profile.png'
 import logo from './assets/logo.png'
 import './Header.css'
 function Header(){

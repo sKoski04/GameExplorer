@@ -1,14 +1,20 @@
 import './MostPopularList.css'
+import { mostPopular } from '../../gamedata/mostPopular.js'
 
 function MostPopularList(){
     return(
         <div className='list-frame'>
+            <h1>most popular games</h1>
             <ul className='list'>
-                <li className='game-card'></li>
-                <li></li>
-                <li></li>
+              {mostPopular.map(mostPopular=>(
+                <li key={mostPopular.id} className='game-card'>
+                    <img src={mostPopular.image} alt="Cover Image" />
+                    <p>{mostPopular.name}</p>
+                </li>
+
+              ))}
             </ul>
-         <h1>most popular games</h1>
+         
         </div>
       
     )

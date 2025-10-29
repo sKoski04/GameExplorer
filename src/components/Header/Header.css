@@ -15,16 +15,20 @@
 }
 .input-field{
     display: flex;
-    
-  border: none;
-  border-radius: 10px;
-    background-color: rgb(61, 61, 61);
+  border: solid;
+border-radius: 10px;
+border-color:#8c9ea1;
+background:none;
 width: 500px;
+height:30px;
     
 }
 .input-field::placeholder {
-  color: #a39869af;          
+  color: #8c9ea1;          
   opacity: 1;         
+}
+input{
+    color:white;
 }
 .profile-icon{
     display: flex;
