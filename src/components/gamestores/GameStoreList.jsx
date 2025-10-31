@@ -1,7 +1,7 @@
-import './MostPopularList.css'
+import './gameStoreList.css'
 
 
-function MostPopularList({subtitle,buttonText,data}){
+function GameStoreList({subtitle,buttonText,data}){
     return(
       <>
       <div className='sub-title'><h2 >{subtitle}</h2>
@@ -14,7 +14,7 @@ function MostPopularList({subtitle,buttonText,data}){
               {data.map(data=>(
                 <li key={data.id} className='game-card'>
                   <a href={data.link} target='blank'>
-                    <img className='cover-img' src={data.image} alt="Cover Image" />
+                    <img className='cover-imge' src={data.image} alt="Cover Image" />
                     </a>
                     <p className='title'>{data.name}</p>
                 </li>
@@ -28,4 +28,4 @@ function MostPopularList({subtitle,buttonText,data}){
    
 }
 
-export default MostPopularList
+export default GameStoreList

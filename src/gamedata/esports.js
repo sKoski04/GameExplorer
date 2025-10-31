@@ -2,7 +2,8 @@ export const esports=[
     {
         id:1,
         name:"Counter-strike 2",
-        image:"https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/CS2_Cover_Art.jpg/250px-CS2_Cover_Art.jpg"
+        image:"https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/CS2_Cover_Art.jpg/250px-CS2_Cover_Art.jpg",
+        link:"https://www.counter-strike.net/cs2"
     },
       {
         id:2,

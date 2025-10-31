@@ -1,49 +1,36 @@
 import { useState } from 'react'
-import Sidebar from './components/sidebar/Sidebar.jsx'
-import Header from './components/Header/Header.jsx'
-import MostPopularList from './components/most popular/MostPopularList.jsx'
-import Listinfo from './components/list information/Listinfo.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Discover from './components/pages/Discover.jsx';
+import Home from './components/pages/Home.jsx';
+import Header from './components/Header/Header.jsx';
+import Sidebar from './components/sidebar/Sidebar.jsx';
+
 import './App.css'
-import { mostPopular } from './gamedata/mostPopular.js'
-import {horror} from './gamedata/horror.js'
-import { esports } from './gamedata/esports.js'
+
+
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <Router>
 <div className='app'>
  <Header></Header>
   <div className='content-wrapper'>
 <Sidebar></Sidebar>
-<div className='list-wrapper'>
-   <Listinfo></Listinfo>
-  <div className='list-item'>
-
-<MostPopularList subtitle={"all time favourites"} buttonText={"see more"} data={mostPopular}> </MostPopularList>
-
-  </div>
- 
-   <div className='list-item'>
-    <MostPopularList subtitle={"Season Favourites: Halloween"} buttonText={"see more"} data={horror}></MostPopularList>
-
-
-
-  </div>
-     <div className='list-item'>
-    <MostPopularList subtitle={"Most popular e-sports titles"} buttonText={"see more"} data={esports}></MostPopularList>
-
-
-
-  </div>
+<div className='page-content'></div>
+<Routes>
+  <Route path='/'element={<Home/>}></Route>
+  <Route path='/discover' element={<Discover></Discover>}></Route>
+</Routes>
 
 
 </div>
-</div>
 
 </div>
-  )
+</Router>
+)
 }
 
 export default App
