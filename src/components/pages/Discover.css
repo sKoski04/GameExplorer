@@ -1,0 +1,13 @@
+.discover-section{
+    display:flex;
+    flex-direction: column;
+
+}
+.dropdown-row{
+    display:flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content:space-between;
+   margin-left:100px;
+
+}
