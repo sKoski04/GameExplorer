@@ -8,13 +8,13 @@ function GameStoreList({subtitle,buttonText,data}){
       <button className='see-all-btn'>{buttonText}</button>
       </div>
       
-        <div className='list-frame'>
+        <div className='list-frame2'>
            
             <ul className='list'>
               {data.map(data=>(
                 <li key={data.id} className='game-card'>
                   <a href={data.link} target='blank'>
-                    <img className='cover-imge' src={data.image} alt="Cover Image" />
+                    <img className='cover-imge2' src={data.image} alt="Cover Image" />
                     </a>
                     <p className='title'>{data.name}</p>
                 </li>

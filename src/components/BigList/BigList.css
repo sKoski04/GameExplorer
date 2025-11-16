@@ -1,0 +1,18 @@
+.listBig{
+    display:flex;
+
+ flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+ 
+
+}
+.list-wrapperBig{
+   
+ 
+
+       display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}

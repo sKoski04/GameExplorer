@@ -1,4 +1,4 @@
-.list-frame{
+.list-frame2{
     display:flex;
     justify-content:flex-start;
     align-items:center;
@@ -15,10 +15,10 @@
     border-radius:15px;
  
 }
-.list-frame::-webkit-scrollbar {
+.list-frame2::-webkit-scrollbar {
   display: none;
 }
-.list{
+.list2{
     display:flex;
     list-style:none;
    
@@ -28,7 +28,7 @@
   gap: 1rem;
   scrollbar-width: none;
 }
-.cover-imge{
+.cover-imge2{
  width: 250px;
  height: 250px;
  object-fit: cover;
@@ -36,7 +36,7 @@
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
-.cover-imge:hover{
+.cover-imge2:hover{
 transform: scale(1.05);
 }
 
@@ -52,14 +52,14 @@ h2{
     margin-bottom: 50px;
   color: #8c9ea1;
 }
-.sub-title{
+.sub-title2{
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
 }
-.see-all-btn{
+.see-all-btn2{
  margin-right: 100px;
   color: #8c9ea1;
   background: none;

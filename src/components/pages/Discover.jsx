@@ -1,8 +1,11 @@
 import DropDown from "../dropdownMenuBar/DropDown"
 import './Discover.css'
+import BigList from "../BigList/BigList"
+import { MainData } from "../../gamedata/MainData"
+
 
 function Discover(){
-    return(
+    return(<>
         
         <section className="discover-section">
         <h1>this is discovery page</h1>
@@ -15,10 +18,17 @@ function Discover(){
         
         
         </section>
-       
+        
+        <section className="discovery-list">
+        
+<BigList data={MainData}></BigList>
+      
+   
 
         
         </section>
+          </section>
+        </>
     )
 }
 
