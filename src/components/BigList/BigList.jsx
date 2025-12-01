@@ -1,16 +1,18 @@
 import "./BigList.css"
+import { useState } from "react"
 
-function BigList({data}){
+function BigList({data, onSelectGame}){
+    
     return(
         <section className="list-wrapperBig">
            
     <ul className="listBig">
-         {data.map(data=>(
-                <li key={data.id} className='game-card'>
-                  <a href={data.link} target='blank'>
-                    <img className='cover-img' src={data.image} alt="Cover Image" />
-                    </a>
-                    <p className='title'>{data.name}</p>
+         {data.map(game=>(
+                <li key={game.id} className='game-card' >
+             
+                    <img className='cover-img' src={game.image} alt="Cover Image" onClick={()=> onSelectGame(game)}/>
+                  
+                    <p className='title'>{game.name}</p>
                 </li>
 
               ))}

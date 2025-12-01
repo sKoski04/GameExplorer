@@ -8,7 +8,7 @@ function MostPopularList({subtitle,buttonText,data}){
       
       <>
       <div className='sub-title'><h2 >{subtitle}</h2>
-      <button className='see-all-btn'>{buttonText}</button>
+     
       </div>
       <div className='list-frame-with-btns'>
         <button className='scroll-btn' onClick={()=>{listRef.current.scrollBy({left: -300, behavior: 'smooth'})

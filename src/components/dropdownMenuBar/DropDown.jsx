@@ -1,13 +1,13 @@
 import './DropDown.css'
-function DropDown({item1,item2,item3,item4}){
+function DropDown({options, placeholder, onChange}){
     return(
        <section className="menu-box">
-        <select name="genre" id="genre"className="dropdown" defaultValue="">
-              <option value="" disabled hidden>{item4}</option>
-            <option value="Action">{item1}</option>
-            <option value="Adventure">{item2}</option>
-            <option value="Roleplay">{item3}</option>
-        </select>
+       <select className='dropdown' defaultValue="" onChange={function(e) { onChange(e.target.value); }}>
+                <option value="" disabled hidden>{placeholder}</option>
+                {options.map(function(option, index) {
+                    return <option key={index} value={option}>{option}</option>;
+                })}
+            </select>
 
        </section>
 

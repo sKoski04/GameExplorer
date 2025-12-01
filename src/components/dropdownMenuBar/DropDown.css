@@ -3,3 +3,8 @@
   margin-left:10px;
     
 }
+.dropdown{
+  background-color: #8c9ea1;
+  border-radius: 15px;
+  cursor: pointer;
+}
