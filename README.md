@@ -1,16 +1,51 @@
-# React + Vite
+# Game Explorer 🎮
+<img width="1901" height="883" alt="image" src="https://github.com/user-attachments/assets/f0bedf9d-859d-4f57-b53b-842e582e0400" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Game Explorer is a React-based web application that lets users browse, discover, and learn more about video games—similar to an IMDb for games. It’s a practice project built to learn React skills, API integration, and responsive UI design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Browse Games: Explore a list of popular and trending video games.
 
-## React Compiler
+Game Details: Click on a game to view detailed information including release date, genre, platforms, ratings, and description.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Search Functionality: Quickly find games by name. (Coming..)
 
-## Expanding the ESLint configuration
+Responsive Design: Works smoothly on desktop, tablet, and mobile devices. (In progress..)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Interactive UI: Clean and user-friendly interface built with React components.
+
+## Tech Stack
+
+React – Frontend framework
+
+React Router – Navigation between pages
+
+
+CSS / Styled Components 
+
+
+
+
+
+## Future Improvements
+
+Add search functionality
+
+Save favorite games locally or with a backend
+
+
+
+
+
+Screenshots
+
+<img width="1854" height="899" alt="image" src="https://github.com/user-attachments/assets/e4d8e25d-0f1f-4909-b663-b27fc600d7d2" />
+<img width="1806" height="851" alt="image" src="https://github.com/user-attachments/assets/5d0b5632-3550-4d94-9915-90a1d7360b13" />
+
+
+
+
+(Include screenshots or GIFs of your app here if possible)
+
+
