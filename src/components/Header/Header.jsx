@@ -1,21 +1,23 @@
 import searchImage from './assets/search.png'
 import profileImage from './assets/profile.png'
-import logo from './assets/logo.png'
+
 import './Header.css'
-function Header(){
+function Header({setWindow}){
 
     return(
-        <div className="search-container">
-            <img className='logo' src={logo} alt="logo" />
-            <div className='search-elements'>
-           
+        <div className='header-wrapper'>
+       
+        <div className="header-container">
+        <div className='nav-items'>
+            <span className='search-text' onClick={()=>setWindow("HOME")}>Home</span>
+             <span className='search-text' onClick={()=>setWindow("DISCOVER")}>Discover</span>
+             <span className='search-text' onClick={()=>setWindow("MEDIA")}>Media</span>
+             <button className="dropdown-button"><span className='arrow-down'onClick={()=>setWindow("SEEMORE")}>See more ⌄</span></button>
+             
+</div>
           
-           </div>
-           <ul className="search-results"></ul>
-          
-
-
-
+        </div>
+ <button className='login-button'><span className='search-text'>Login</span></button>
         </div>
       
 

@@ -1,50 +1,49 @@
-.search-container{
+.header-container{
     display: flex;
-   justify-content: space-between;
+    width:100%;
+   justify-content: center;
+   height:80px;
    align-items: center;
    
-}
-
-
-.search-icon{
-    flex:2;
-    height: 30px;
-    width: auto;
-    margin-top:10px;
    
 }
-.input-field{
-    display: flex;
-  border: solid;
-border-radius: 10px;
-border-color:#8c9ea1;
-background:none;
-width: 500px;
-height:30px;
-    
-}
-.input-field::placeholder {
-  color: #8c9ea1;          
-  opacity: 1;         
-}
-input{
-    color:white;
-}
-.profile-icon{
-    display: flex;
-    justify-content: flex-end;
-    height: 30px;
-    width: auto;
-   
-}
-.search-elements{
-    flex:2;
+.header-wrapper{
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-right: 80px;
+  padding-left: 80px;
+    justify-content: space-between;
+     background: #F2709C;
+background: linear-gradient(90deg, rgba(242, 112, 156, 1) 0%, rgba(140, 166, 219, 1) 100%);
    
 }
-.logo{
-    height:100px;
-    width:100px;
+
+
+
+.search-text{
+    color:#DDFF7E;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.arrow-down{
+    color:#DDFF7E;
+    cursor: pointer;
+    
+}
+
+.dropdown-button{
+ background-color: transparent;
+ border-radius: 100px;
+ border: none;
+ font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-button{
+    background-color: black;
+    height: 48px;
+    width: 98px;
+   border-radius: 9px;
+   border-color: #DDFF7E;
 }

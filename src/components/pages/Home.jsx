@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import Sidebar from '../sidebar/Sidebar.jsx'
 import Header from '../Header/Header.jsx'
-import MostPopularList from '../../components/most popular/MostPopularList.jsx'
+import MostPopularList from '../most popular/Infobox-text.jsx'
 import Listinfo from '../list information/Listinfo.jsx'
 import GameStoreList from '../gamestores/GameStoreList.jsx'
 

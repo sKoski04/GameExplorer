@@ -1,26 +1,66 @@
-.text-row{
-    display:flex;
-   flex-direction: column;
+.frame{
+      display: flex;
+   background: linear-gradient(
+    90deg,
+    rgba(242, 112, 156, 1) 0%,
+    rgba(140, 166, 219, 1) 100%
    
-    padding:0;
-   margin-left:100px;
+  );
+  margin-top: 100px;
+ height: 320px;
+  width: 80%;
+ flex-direction: column;
+ list-style: none;
+  border-radius: 10px;
+   overflow-y:hidden ;
 
-    
+  
+
+  
 }
-.button-wrapper{
-    display:flex;
-    flex:2;
-    justify-content:flex-end;
-    align-items:flex-end;
-    margin-bottom:5px;
+
+
+.list-Big{
+   display: flex;
+
+align-items: center;
+
+flex-direction: row;
+  
+ background: none;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ 
+ flex: 1;
+
+
 }
-.see-all-button{
-    border:none;
-    height:20px;
-   background:none;
-   color:#8c9ea1;
-   font-size:15px;
+
+.game-card2 {
+
+height: 100%;
 }
-h1{
-    color:#8c9ea1;
+.frame h2 {
+  margin: 0; /* poistaa top/bottom margin */
+  padding: 0; /* jos haluat */
+}
+.cover-img2{
+ height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.game-card2 p {
+  margin: 0;
+  padding: 0;
+}
+.title2{
+    color:#DDFF7E;
+    padding: 10px;
+    font-size: large;
+    text-wrap: balance;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
 }

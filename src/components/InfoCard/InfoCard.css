@@ -1,5 +1,17 @@
 .card-frame{
-    width:100px;
-    height:100px;
-    backgground-color:white;
+    margin-top: 70px;
+    display: flex;
+    width:200px;
+    height:300px;
+    border-radius: 10px;
+    background-color:rgba(241, 103, 188, 0.034);
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cover-img{
+    height: 200px;
+    width: 160px;
+    margin-top: 50px;
+    border-radius: 10px;
 }

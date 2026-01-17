@@ -1,10 +1,12 @@
 import './InfoCard.css'
 
-function InfoCard({game,onClose}){
+function InfoCard({data,onClose}){
     return(
-        <div className='card-frame' onClick={onClose}>
-<img src={game.image} alt="" />
+        <div>
+      
+        
         </div>
+        
     )
 }
 export default InfoCard
