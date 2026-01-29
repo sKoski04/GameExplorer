@@ -1,6 +1,5 @@
 import './Listinfo.css'
-import InfoCard from '../InfoCard/InfoCard'
-import { MainData } from '../../gamedata/MainData'
+
 
 function Listinfo({data,onSelectGame,title}){
 

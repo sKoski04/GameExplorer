@@ -27,11 +27,12 @@ width: 90%;
   
 }
 .game-card{
-
+margin-top: 40px;
     display: flex;
+    justify-content: center;
     align-items: center;
-   
-    width: 250px;
+  border-radius: 10px;
+    width: 350px;
 
     
 
@@ -44,4 +45,9 @@ flex-direction: column;}
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+}
+.cover-images{
+    border-radius: 10px;
+    width: 240px;
+    height: 300px;
 }

@@ -10,7 +10,7 @@ function BigList({data, onSelectGame}){
          {data.map(game=>(
                 <li key={game.id} className='game-card' >
              
-                    <img className='cover-img' src={game.image} alt="Cover Image" onClick={()=> onSelectGame(game)}/>
+                    <img className='cover-images' src={game.image} alt="Cover Image" onClick={()=> onSelectGame(game)}/>
                   
                     <p className='title'>{game.name}</p>
                 </li>
