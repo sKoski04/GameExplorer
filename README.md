@@ -31,6 +31,7 @@ CSS / Styled Components
 
 
 ## Future Improvements
+Started refactioring code to use API fetch to get gamedata instead of using json files in react code (jan 2026 -->)
 
 Add search functionality
 
