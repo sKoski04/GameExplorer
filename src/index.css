@@ -1,19 +1,13 @@
 
-.box-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-}
     
 
 html, body {
- 
+ scroll-behavior: smooth;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: #C1C7CD;
+  background-color: #FDFB76;
   
+
 }

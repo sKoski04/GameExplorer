@@ -1,7 +1,43 @@
 .app{
    display: flex;
-    flex-direction: column;
-   background: #080101;
-background: linear-gradient(90deg, rgba(8, 1, 1, 1) 0%, rgba(99, 70, 227, 1) 100%);
+   flex-direction: column;
+   background-color: #FDFB76;
+scroll-behavior: smooth;
    overflow: hidden;
+}
+.home-grid{
+   display:grid;
+   min-height: 100vh;
+   grid-template-areas:"header-left header-middle header-right"
+                       "upper-mid-L upper-mid-C upper-mid-R"
+                       "mid-left mid-center mid-right"
+                       "bottom-left bottom-mid bottom-right" ;
+                         grid-template-columns: 400px 1fr 1000px;
+                         
+
+
+}
+.header-box{
+   margin-right:200px;
+   grid-area:upper-mid-R;
+
+}
+.text-box{
+   grid-area:upper-mid-R;
+   margin-top:60px;
+
+}
+.controller-img-container{
+   grid-area:upper-mid-C;
+  
+
+}
+.controller-img{
+   max-width: 100%;
+  height: auto;
+}
+
+.game-list-section{
+   height: 1000px;
+   background-color: aqua;
 }

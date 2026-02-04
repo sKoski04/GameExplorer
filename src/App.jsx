@@ -43,50 +43,33 @@ useEffect(() => {
     .catch(err => console.error(err));
 }, []);
 
+
+
+
+
+
   
   if(view==="HOME"){
-
  
  return( 
-
 <>
-<Header setWindow={setview}></Header>
-<MostPopularList title={"Welcome to GameDB! Explore everything that is related to videogames, wheter you want to explore new content or review classics we got it all."}></MostPopularList>
-<div className='box-wrapper'>
-  
-<Listinfo  data={popularGames} onSelectGame={null} title="Popular Games"></Listinfo>
-
-<Listinfo data={media} title="Top Creators"></Listinfo>
-
-<GameCard></GameCard>
+<div className='home-grid'>
+<div className='header-box'>
+  <Header ></Header>
+</div>
+<div className='text-box'><MostPopularList title={"Hello there 👋 Welcome to Video Game Explorer"}></MostPopularList></div>
+<div className='controller-img-container'>
+  <img className='controller-img' src="https://png.pngtree.com/png-clipart/20230502/original/pngtree-colorful-super-retro-gaming-controller-from-90s-png-image_9134680.png" alt="" />
 </div>
 
+</div>
+<div id='Discover' className='game-list-section'>
 
+</div>
 </>
- ) }
-
- if(view==="DISCOVER"){
-  return(
-    <>
-    <Header setWindow={setview}></Header>
-  
-    <BigList data={games}></BigList>
-    </>
-  )
+ ) 
  }
 
-  if(view==="MEDIA"){
-  return(
-    <Header setWindow={setview}></Header>
-  )
- }
-
-  if(view==="SEEMORE"){
-  return(
-    <Header setWindow={setview}></Header>
-
-  )
- }
 }
 
 
