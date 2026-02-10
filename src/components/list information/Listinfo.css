@@ -1,19 +1,13 @@
 .frame{
       display: flex;
-   background: linear-gradient(
-    90deg,
-    rgba(242, 112, 156, 1) 0%,
-    rgba(140, 166, 219, 1) 100%
-   
-  );
-  margin-top: 100px;
+  margin-top: 70px;
  height: 320px;
   width: 80%;
  flex-direction: column;
  list-style: none;
   border-radius: 10px;
    overflow-y:hidden ;
-
+background-color: 	#49297e;
   
 
   
@@ -57,7 +51,7 @@ height: 100%;
   padding: 0;
 }
 .title2{
-    color:#DDFF7E;
+    color:#00db96;
     padding: 10px;
     font-size: large;
     text-wrap: balance;

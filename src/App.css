@@ -38,6 +38,50 @@ scroll-behavior: smooth;
 }
 
 .game-list-section{
-   height: 1000px;
-   background-color: aqua;
+    display:grid;
+   min-height: 100vh;
+   grid-template-areas:"header-left header-middle header-right"
+                       "upper-mid-L upper-mid-C upper-mid-R"
+                       "mid-left mid-center mid-right"
+                       "bottom-left bottom-mid bottom-right" ;
+                         grid-template-columns: 4000px 1fr 1000px;
+   
+   background-color:	#90dcff;
+}
+.list-wrapper-main{
+    grid-area:upper-mid-L;
+    margin:0;
+}
+.discover-title-section{
+   color:	#49297e;
+   font-family:'Courier New', Courier, monospace;
+   grid-area: upper-mid-L;
+   margin-left: 40px;
+}
+.discover-title-main{
+   color:	#49297e;
+   font-family:'Courier New', Courier, monospace;
+   grid-area: header-left;
+   margin-left: 40px;
+}
+.list-wrapper-sports{
+    grid-area:mid-left;
+    margin:0;
+}
+.discover-title-section-sports{
+   color:	#49297e;
+   font-family:'Courier New', Courier, monospace;
+   grid-area: mid-left;
+   margin-left: 40px;
+}
+
+.list-wrapper-e-sport{
+    grid-area:bottom-left;
+    margin:0;
+}
+.discover-title-section-e-sport{
+   color:	#49297e;
+   font-family:'Courier New', Courier, monospace;
+   grid-area: bottom-left;
+   margin-left: 40px;
 }

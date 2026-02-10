@@ -64,7 +64,19 @@ useEffect(() => {
 
 </div>
 <div id='Discover' className='game-list-section'>
-
+   <h1 className='discover-title-main'>Discover</h1>
+  <h1 className='discover-title-section'>Popular Games </h1>
+  <div className='list-wrapper-main'>
+<Listinfo data={games}></Listinfo>
+</div>
+  <h1 className='discover-title-section-sports'>Sport Games </h1>
+  <div className='list-wrapper-sports'>
+<Listinfo data={games}></Listinfo>
+</div>
+  <h1 className='discover-title-section-e-sport'>Most Popular esport games </h1>
+  <div className='list-wrapper-e-sport'>
+<Listinfo data={games}></Listinfo>
+</div>
 </div>
 </>
  ) 
