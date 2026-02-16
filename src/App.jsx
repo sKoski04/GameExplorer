@@ -9,6 +9,7 @@ import MostPopularList from './components/most popular/Infobox-text.jsx';
 import './App.css'
 import Listinfo from './components/list information/Listinfo.jsx';
 import BigList from './components/BigList/BigList.jsx';
+import GameDetailScreen from './components/GameDetailScreen/GameDetailScreen.jsx';
 
 
 
@@ -23,6 +24,8 @@ function App() {
   const [view,setview]=useState("HOME")
   const[games,setgames]=useState([])
   const[popularGames,setPopularGames]=useState([])
+  const[selectedGame,setSelectedGame]=useState(null)
+  console.log(selectedGame)
 useEffect(() => {
   fetch("http://localhost:8080/videogameapi/games")
     .then(res => res.json())
@@ -49,6 +52,13 @@ useEffect(() => {
 
 
   
+  if(selectedGame) {
+    console.log("changing to selected game....")
+    return(
+      <GameDetailScreen game={selectedGame} onClose={() => setSelectedGame(null)}></GameDetailScreen>
+    )
+  }
+
   if(view==="HOME"){
  
  return( 
@@ -67,15 +77,16 @@ useEffect(() => {
    <h1 className='discover-title-main'>Discover</h1>
   <h1 className='discover-title-section'>Popular Games </h1>
   <div className='list-wrapper-main'>
-<Listinfo data={games}></Listinfo>
+<Listinfo data={games} onSelectGame={setSelectedGame}></Listinfo>
+
 </div>
   <h1 className='discover-title-section-sports'>Sport Games </h1>
   <div className='list-wrapper-sports'>
-<Listinfo data={games}></Listinfo>
+<Listinfo data={games} onSelectGame={setSelectedGame}></Listinfo>
 </div>
   <h1 className='discover-title-section-e-sport'>Most Popular esport games </h1>
   <div className='list-wrapper-e-sport'>
-<Listinfo data={games}></Listinfo>
+<Listinfo data={games} onSelectGame={setSelectedGame}></Listinfo>
 </div>
 </div>
 </>
