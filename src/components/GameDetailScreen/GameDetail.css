@@ -71,3 +71,18 @@
    font-size: 20px;
      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.button-wrapper{
+    display: flex;
+    grid-area:bottom-right;
+    margin-right: 600px;
+}
+.play-button{
+    margin-top:150px;
+    margin-left:700px;
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(40, 189, 40);
+    color: white;
+}

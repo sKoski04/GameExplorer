@@ -11,11 +11,13 @@ function GameDetailScreen({game, onClose}) {
 <div className='img-frame'>
     <img className='image-itself' src={game.image} alt="" />
     </div>
-    <h1 className='game-title-1'>{game.name}</h1>
-    <h4 className='game-studio-name'>by: {game.studio}</h4>
+    <h1 className='game-title-1'> Name{game.name}</h1>
+    <h4 className='game-studio-name'>by: Studio {game.studio}</h4>
     <div className='p-wrapper'>
-    <p className='game-description'>{game.description}</p>
+    <p className='game-description'> description comes here{game.description}</p>
+    <button className='play-button'>Play</button>
     </div>
+    
 </div>
     </div>
 
