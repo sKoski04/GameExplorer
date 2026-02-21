@@ -24,7 +24,7 @@ function App() {
   const [view,setview]=useState("HOME")
   const[games,setgames]=useState([])
   const[popularGames,setPopularGames]=useState([])
-  const[selectedGame,setSelectedGame]=useState(true)
+  const[selectedGame,setSelectedGame]=useState(null)
   console.log(selectedGame)
 useEffect(() => {
   fetch("http://localhost:8080/videogameapi/games")
