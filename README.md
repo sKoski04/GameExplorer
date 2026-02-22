@@ -21,7 +21,7 @@ Interactive UI: Clean and user-friendly interface built with React components.
 
 React – Frontend framework
 
-Javascript handling api calls from a external spring boot api
+Javascript handling api calls from an external spring boot api
 
 CSS / Styled Components 
 
