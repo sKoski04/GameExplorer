@@ -1,6 +1,6 @@
 # Game Explorer 🎮
 
-<img width="1901" height="883" alt="image" src="https://github.com/user-attachments/assets/e7968219-3b13-4bf0-8739-eabcfdc2bc75" />
+<img width="1901" height="883" alt="image" src="https://github.com/user-attachments/assets/2a0d283b-9a7a-4b25-ba11-9a1c90a27010" />
 
 
 Game Explorer is a React-based web application that lets users browse, discover, and learn more about video games—similar to an IMDb for games. It’s a practice project built to learn React skills, API integration, and responsive UI design.
@@ -21,8 +21,7 @@ Interactive UI: Clean and user-friendly interface built with React components.
 
 React – Frontend framework
 
-React Router – Navigation between pages
-
+Javascript handling api calls from a external spring boot api
 
 CSS / Styled Components 
 
