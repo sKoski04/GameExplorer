@@ -4,8 +4,12 @@ import { useState } from "react"
 function BigList({data, onSelectGame}){
     
     return(
+     <>
+    
+     <section className="main-frame">
+         <h1 className="gamesFound">100 Games Found</h1>
         <section className="list-wrapperBig">
-           
+            
     <ul className="listBig">
          {data.map(game=>(
                 <li key={game.id} className='game-card' >
@@ -18,6 +22,8 @@ function BigList({data, onSelectGame}){
               ))}
        </ul>
        </section>
+       </section>
+       </>
     )
 }
 

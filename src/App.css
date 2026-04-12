@@ -1,25 +1,15 @@
 .app{
    display: flex;
    flex-direction: column;
-   background-color: #FDFB76;
+   background-color: #000000;
 scroll-behavior: smooth;
    overflow: hidden;
 }
-.home-grid{
-   display:grid;
-   min-height: 100vh;
-   grid-template-areas:"header-left header-middle header-right"
-                       "upper-mid-L upper-mid-C upper-mid-R"
-                       "mid-left mid-center mid-right"
-                       "bottom-left bottom-mid bottom-right" ;
-                         grid-template-columns: 400px 1fr 1000px;
-                         
 
-
-}
 .header-box{
    margin-right:200px;
-   grid-area:upper-mid-R;
+   grid-area:header-middle;
+   width: 100%;
 
 }
 .text-box{
@@ -46,7 +36,7 @@ scroll-behavior: smooth;
                        "bottom-left bottom-mid bottom-right" ;
                          grid-template-columns: 4000px 1fr 1000px;
    
-   background-color:	#90dcff;
+   background-color:	#ffffff;
 }
 .list-wrapper-main{
     grid-area:upper-mid-L;

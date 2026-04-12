@@ -67,28 +67,11 @@ useEffect(() => {
 <div className='header-box'>
   <Header ></Header>
 </div>
-<div className='text-box'><MostPopularList title={"Hello there 👋 Welcome to Video Game Explorer"}></MostPopularList></div>
-<div className='controller-img-container'>
-  <img className='controller-img' src="https://png.pngtree.com/png-clipart/20230502/original/pngtree-colorful-super-retro-gaming-controller-from-90s-png-image_9134680.png" alt="" />
-</div>
+<BigList data={games} onSelectGame={setSelectedGame} ></BigList>
 
 </div>
-<div id='Discover' className='game-list-section'>
-   <h1 className='discover-title-main'>Discover</h1>
-  <h1 className='discover-title-section'>Popular Games </h1>
-  <div className='list-wrapper-main'>
-<Listinfo data={games} onSelectGame={setSelectedGame}></Listinfo>
 
-</div>
-  <h1 className='discover-title-section-sports'>Sport Games </h1>
-  <div className='list-wrapper-sports'>
-<Listinfo data={games} onSelectGame={setSelectedGame}></Listinfo>
-</div>
-  <h1 className='discover-title-section-e-sport'>Most Popular esport games </h1>
-  <div className='list-wrapper-e-sport'>
-<Listinfo data={games} onSelectGame={setSelectedGame}></Listinfo>
-</div>
-</div>
+
 </>
  ) 
  }

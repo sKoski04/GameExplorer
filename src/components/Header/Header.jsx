@@ -6,11 +6,13 @@ function Header({setWindow,onClick}){
 
     return(
         <div className='header-wrapper'>
-       
+           <h1 className='main-title'>Game.DB</h1>
         <div className="header-container">
+         
         <div className='nav-items'>
-        <a className='link' href="#Home">Home</a>
-         <a className='link' href="#Discover">Discover</a>
+           <input type="text" className='search-bar' placeholder='🔍︎ Search For Games...'/>
+        <a className='link' href="">help?</a>
+      
 
              
 </div>
