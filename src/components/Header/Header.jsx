@@ -1,28 +1,18 @@
-import searchImage from './assets/search.png'
-import profileImage from './assets/profile.png'
+import { Link } from 'react-router-dom';
+import './Header.css';
 
-import './Header.css'
-function Header({setWindow,onClick}){
-
-    return(
-        <div className='header-wrapper'>
-       
-        <div className="header-container">
-        <div className='nav-items'>
-        <a className='link' href="#Home">Home</a>
-         <a className='link' href="#Discover">Discover</a>
-
-             
-</div>
-          
-        </div>
- 
-        </div>
-      
-
-       
-
-      
-    )
+function Header() {
+  return (
+    <div className="header-container">
+      <div className='nav-items'>
+        <Link className='link' to="/">Home</Link>
+        <Link className='link' to="/discover">Discover</Link>
+        
+        <Link className='link' to="/videos">Videos</Link>
+        <Link className='link' to="/contact">Special</Link>
+      </div>
+    </div>
+  );
 }
+
 export default Header
